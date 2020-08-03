@@ -95,7 +95,9 @@ class MainContent extends Component {
     const { location } = this.props;
     const { location: prevLocation = {} } = prevProps || {};
     if (!prevProps || prevLocation.pathname !== location.pathname) {
-      this.bindScroller();
+      setTimeout(() => {
+        this.bindScroller();
+      }, 200);
     }
     if (!window.location.hash && prevLocation.pathname !== location.pathname) {
       window.scrollTo(0, 0);
