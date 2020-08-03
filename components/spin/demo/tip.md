@@ -17,7 +17,7 @@ Customized description content.
 import { Spin, Alert } from 'antd';
 
 ReactDOM.render(
-  <Spin tip="Loading...">
+  <Spin tip="正在匹配中.....">
     <Alert
       message="Alert message title"
       description="Further details about the context of this alert."
